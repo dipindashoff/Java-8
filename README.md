@@ -1,1 +1,1 @@
-# Java8
+# Java 8 - Lambda expressions
