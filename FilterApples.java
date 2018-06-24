@@ -51,6 +51,11 @@ public class FilterApples {
 		System.out.println(HeavyWtApplesPredicate);
 
 		// filter by green & light weight apples using Lambda
+		/*
+		 * NOTE: Lambda expressions let you provide the implementation of the abstract
+		 * method of a functional interface directly inline AND treat the whole
+		 * expression as an instance of a functional interface
+		 */
 		List<Apple> GreenApplesLambda = filterByPredicate(inventory,
 				(Apple a) -> a.getColor().equals("green") && a.getWeight() <= 80);
 		System.out.println("Filter by green & light weight apples using Lambda");
